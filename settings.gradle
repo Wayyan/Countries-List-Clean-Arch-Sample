@@ -1,0 +1,7 @@
+include ':data:cache'
+include ':domain'
+include ':base'
+include ':data:network'
+include ':data:framework'
+include ':app'
+rootProject.name = "Countries"
