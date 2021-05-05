@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("kapt")
-    //id("dagger.hilt.android.plugin")
+    id("dagger.hilt.android.plugin")
     //id(KtLint.name)
     id("kotlin-android")
 }
