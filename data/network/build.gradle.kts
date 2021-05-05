@@ -37,7 +37,8 @@ android {
 }
 
 dependencies {
-    implementation(":data:framework")
+    implementation(project(":data:framework"))
+    implementation(project(":domain"))
 
     implementation(Kotlin.stdblib_jdk)
     implementation ("androidx.core:core-ktx:1.3.2")
@@ -53,6 +54,8 @@ dependencies {
     testImplementation(OkHttp.mock_web_server)
     implementation(Retrofit.core)
     implementation(Retrofit.moshi_converter)
+
+    moshi()
 
     //dagger
     daggerJvm()
